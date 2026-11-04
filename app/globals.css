@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: #d6162b;
+  --color-brand-dark: #a80f20;
+  --font-display: var(--font-display-var);
+  --font-sans: var(--font-body-var);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background: #fff;
+  color: #111;
+  font-family: var(--font-body-var), system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-brand);
+  outline-offset: 3px;
+}
